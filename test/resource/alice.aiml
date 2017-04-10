@@ -1,11 +1,93 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<aiml>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+    category>>pattern>>template>>*
     <category>
-    <pattern> HELLO ALICE </pattern>
-
-    <template>
-        Hello User
-    </template>
-
+        <pattern>
+            HI
+        </pattern>
+        <template>
+            <random>
+                <li>Hi!</li>
+                <li>Hello!</li>
+            </random>
+        </template>
     </category>
+
+    <category>
+        <pattern>
+            HELLO *
+        </pattern>
+        <template>
+            Hi <star/>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            HOW ARE YOU?
+        </pattern>
+        <template>
+            I'm good. And U?
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            HOW ARE U?
+        </pattern>
+        <template>
+            <srai>HOW ARE YOU?</srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>
+            HOW ARE YOU *
+        </pattern>
+        <template>
+            <srai>HOW ARE YOU?</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHATS YOUR NAME
+        </pattern>
+        <template>
+            <srai>My name is PIPBOY</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>
+            * BITCH
+        </pattern>
+        <template>
+            ¡No seas boca sucia!
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            * SHAKIRA
+        </pattern>
+        <template>
+            Nació el 2 de febrero de 1977 en Barranquilla, Colombia. Es uno de los
+            puertos mas  importantes del país. Siendo hija de una familia de clase media de ascendencia  libanesa, sus padres son William Mebarak y Nidia Ripoll, quienes le dieron el  nombre de Shakira.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            QUE HORA ES
+        </pattern>
+        <template>
+            <system>echo "Son las $(date +%H) horas, $(date +%M) minutos y $(date +%S) segundos "</system>
+        </template>
+    </category>
+
 </aiml>

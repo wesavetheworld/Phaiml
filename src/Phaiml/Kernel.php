@@ -4,7 +4,6 @@ namespace Phaiml;
 class Kernel
 {
 
-
     public function learn(String $aiml_file_path) : bool { return true;}
 
     public function response(String $question, $session_id = null) : String { return "Hello User!"; }

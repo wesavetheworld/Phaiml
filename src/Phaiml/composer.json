@@ -1,0 +1,15 @@
+{
+    "name": "Phaiml/Kernel",
+    "description": "AIML Library for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Camilo Melo",
+            "email": "camilotxm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    }
+}
